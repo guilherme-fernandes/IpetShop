@@ -1,13 +1,16 @@
 package br.imd.lp2.projetofinal;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Ave extends Animal {
 
-    private double tamanhoDoBico;
-    private double envergaduraAsa;
+    //private double tamanhodobico;
+    //private double envergaduraasa;
 
-    public Ave(int code, String classe, String nome, String raca, double tamanho, char sexo, double valor, double tamanhoDoBico, double envergaduraDaAsa) {
-        super(code, classe, nome, raca, tamanho, sexo, valor);
-        this.tamanhoDoBico = tamanhoDoBico;
-        this.envergaduraAsa = envergaduraDaAsa;
+    public Ave(String classe, String nome, String raca, double tamanho, char sexo, double valor) {
+        super(classe, nome, raca, tamanho, sexo, valor);
+        //this.tamanhodobico = tamanhodobico;
+        //this.envergaduraasa = envergaduraasa;
     }
 }

@@ -1,8 +1,10 @@
 package br.imd.lp2.projetofinal;
 
+import java.util.List;
+
 public class Animal {
 
-    protected int code;
+    protected int code = 0;
     protected String classe;
     protected String nome;
     String raca;
@@ -11,8 +13,8 @@ public class Animal {
     protected double valor;
 
 
-    public Animal(int code, String classe, String nome, String raca, double tamanho, char sexo, double valor) {
-        this.code = code;
+    public Animal(String classe, String nome, String raca, double tamanho, char sexo, double valor) {
+        code = code + 1;
         this.nome = nome;
         this.raca = raca;
         this.tamanho = tamanho;

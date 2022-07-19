@@ -1,0 +1,44 @@
+{
+  "Animais": [
+    {
+      "classe": "Mamifero",
+      "nome": "cachorro",
+      "raca": "golden retriever",
+      "tamanho": 1.90,
+      "sexo": "M",
+      "valor": 2250.00,
+      "corpelo": "Caramelo"
+    },
+    {
+      "classe": "Mamifero",
+      "nome": "gato",
+      "raca": "persa",
+      "tamanho": 1.01,
+      "sexo": "M",
+      "valor": 1500.00,
+      "corpelo": "Preto e Branco"
+    },
+    {
+      "classe": "Ave",
+      "nome": "Passaro",
+      "raca": "Calopsita",
+      "tamanho": 0.30,
+      "sexo": "F",
+      "valor": 500.00,
+      "tamanhodobico": 0.1,
+      "envergaduraasa": 0.75
+    },
+
+    {
+      "classe": "Ave",
+      "nome": "Passaro",
+      "raca": "Periquito",
+      "tamanho": 0.40,
+      "sexo": "F",
+      "valor": 300.00,
+      "tamanhodobico": 0.2,
+      "envergaduraasa": 1.00
+    }
+  ]
+}
+
