@@ -31,4 +31,8 @@ public class Mamifero extends Animal {
             throw new LessThanZeroException();
         }
     }
+
+    public String toString() {
+        return "Code: " + code + "\tClasse: " + classe + "\traça: " + raca + "\ttamanho: " + tamanho + "\tSexo: " + sexo + "\tvalor: " + valor + "porte: " + porte;
+    }
 }

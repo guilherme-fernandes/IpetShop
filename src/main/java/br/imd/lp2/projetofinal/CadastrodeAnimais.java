@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.imd.lp2.projetofinal.excecoes.AnimalClassUnknown;
-import br.imd.lp2.projetofinal.excecoes.LessThanZeroException;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -19,7 +18,7 @@ public class CadastrodeAnimais {
     public List<Ave> estoqueAves = new ArrayList<>();
     public List<Peixe> estoquePeixe = new ArrayList<>();
 
-    public void lerJson(String nomedoarquivo) {
+    public void cadastramentoViaJson(String nomedoarquivo) throws AnimalClassUnknown {
 
         Gson gson = new Gson();
 
@@ -32,17 +31,19 @@ public class CadastrodeAnimais {
             e.printStackTrace();
         }
 
+        adicionarAnimaisClasses();
+
     }
 
-    public void adicionarAnimaisClasses() throws AnimalClassUnknown {
+    private void adicionarAnimaisClasses() {
 
         for(Animal a : novosanimais) {
 
-            if (a.classe == "Mamifero") {
+            if (a.classe.equals("Mamifero")) {
                 estoqueMamifero.add((Mamifero)a);
             }
 
-            else if (a.classe == "Ave") {
+            else if (a.classe.equals("Ave")) {
                 estoqueAves.add((Ave)a);
             }
 
@@ -50,11 +51,10 @@ public class CadastrodeAnimais {
                 estoquePeixe.add((Peixe)a);
             }
 
-            else {
-                throw new AnimalClassUnknown();
-            }
-
-            novosanimais.remove(a);
+        //    else {
+        //        throw new AnimalClassUnknown();
+        //    }
         }
+        novosanimais.clear();
     }
 }

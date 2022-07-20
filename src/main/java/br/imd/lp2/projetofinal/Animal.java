@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Animal {
 
-    protected int code = 0;
+    protected int code = 1;
     protected String classe;
     protected String nome;
     String raca;
@@ -15,6 +15,7 @@ public class Animal {
 
     public Animal(String classe, String nome, String raca, double tamanho, char sexo, double valor) {
         code = code + 1;
+        this.classe = classe;
         this.nome = nome;
         this.raca = raca;
         this.tamanho = tamanho;

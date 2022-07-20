@@ -13,4 +13,8 @@ public class Ave extends Animal {
         //this.tamanhodobico = tamanhodobico;
         //this.envergaduraasa = envergaduraasa;
     }
+
+    public String toString() {
+        return "Code: " + code + "\tClasse: " + classe + "\traça: " + raca + "\ttamanho: " + tamanho + "\tSexo: " + sexo + "\tvalor: " + valor;
+    }
 }
