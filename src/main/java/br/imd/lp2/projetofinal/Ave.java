@@ -14,7 +14,8 @@ public class Ave extends Animal {
         //this.envergaduraasa = envergaduraasa;
     }
 
+    @Override
     public String toString() {
-        return "Code: " + code + "\tClasse: " + classe + "\traça: " + raca + "\ttamanho: " + tamanho + "\tSexo: " + sexo + "\tvalor: " + valor;
+        return super.toString();
     }
 }

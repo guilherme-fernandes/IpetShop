@@ -4,23 +4,25 @@ import java.util.List;
 
 public class Animal {
 
-    protected int code = 1;
     protected String classe;
     protected String nome;
     String raca;
     protected double tamanho;
     protected char sexo;
     protected double valor;
+    protected double valorvenda;
+
+    protected final double porcentvenda = 2.1;
 
 
     public Animal(String classe, String nome, String raca, double tamanho, char sexo, double valor) {
-        code = code + 1;
         this.classe = classe;
         this.nome = nome;
         this.raca = raca;
         this.tamanho = tamanho;
         this.sexo = sexo;
         this.valor = valor;
+        this.valorvenda = valorvenda * porcentvenda;
     }
 
 }
